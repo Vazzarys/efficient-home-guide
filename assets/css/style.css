@@ -249,6 +249,17 @@ ol {
   color: #123524;
 }
 
+.button-dark {
+  color: #123524;
+  border-color: #123524;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  background: #123524;
+  color: #ffffff;
+}
+
 /* Cards */
 .category-grid,
 .article-grid {
@@ -308,6 +319,22 @@ ol {
 
 .content-narrow p + p {
   margin-top: 1rem;
+}
+
+/* Error Page */
+.error-illustration {
+  margin: 2rem 0;
+}
+
+.error-illustration img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid #dfe9e3;
+  box-shadow: 0 10px 26px rgba(18, 53, 36, 0.08);
 }
 
 /* Article Images */
