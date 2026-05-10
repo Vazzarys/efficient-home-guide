@@ -316,8 +316,10 @@ ol {
 }
 
 .article-image img {
-  width: 100%;
+   width: 100%;
+  aspect-ratio: 16 / 9;
   height: auto;
+  object-fit: cover;
   border-radius: 18px;
   border: 1px solid #dfe9e3;
   box-shadow: 0 10px 26px rgba(18, 53, 36, 0.08);
