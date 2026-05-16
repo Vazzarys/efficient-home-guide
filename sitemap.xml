@@ -155,4 +155,11 @@
   <priority>0.9</priority>
 </url>
 
+<url>
+  <loc>https://efficienthomeguide.com/editorial-guidelines.html</loc>
+  <lastmod>2026-01-01</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
 </urlset>
