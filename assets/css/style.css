@@ -337,6 +337,144 @@ ol {
   box-shadow: 0 10px 26px rgba(18, 53, 36, 0.08);
 }
 
+/* Theme Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 1.1rem;
+  right: 1.5rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #f3c969;
+  cursor: pointer;
+  box-shadow: none;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  color: #f6d57a;
+  transform: translateY(-1px) scale(1.08);
+}
+
+.theme-toggle-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.theme-toggle-icon {
+  display: inline-block;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.theme-toggle.is-animating .theme-toggle-icon {
+  animation: bulb-pop 0.45s ease;
+}
+
+body.dark-mode .theme-toggle-icon {
+  filter: drop-shadow(0 0 8px rgba(243, 201, 105, 0.9));
+}
+
+@keyframes bulb-pop {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  35% {
+    transform: scale(1.25) rotate(-10deg);
+  }
+
+  70% {
+    transform: scale(0.95) rotate(8deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #0f1f18;
+  color: #e8f0eb;
+}
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+  background: #0b1712;
+}
+
+body.dark-mode .site-logo,
+body.dark-mode .main-nav a,
+body.dark-mode .footer-logo,
+body.dark-mode .footer-nav a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #f5f8f6;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode figcaption {
+  color: #d4ded8;
+}
+
+body.dark-mode .section-muted,
+body.dark-mode .article-card,
+body.dark-mode .category-card {
+  background: #14271e;
+}
+
+body.dark-mode .article-card,
+body.dark-mode .category-card,
+body.dark-mode .article-image img,
+body.dark-mode .error-illustration img {
+  border-color: #284739;
+}
+
+body.dark-mode .read-more,
+body.dark-mode a {
+  color: #f3c969;
+}
+
+body.dark-mode .theme-toggle {
+  background: transparent;
+  color: #f3c969;
+  border-color: transparent;
+}
+
+
+body.dark-mode .button-secondary.button-dark {
+  color: #f3c969;
+  border-color: #f3c969;
+}
+
+body.dark-mode .button-secondary.button-dark:hover,
+body.dark-mode .button-secondary.button-dark:focus {
+  background: #f3c969;
+  color: #123524;
+}
+
+body.dark-mode .button-primary {
+  color: #123524;
+}
+
+body.dark-mode .button-primary:hover,
+body.dark-mode .button-primary:focus {
+  color: #123524;
+}
+
 /* Article Images */
 .article-image {
   margin: 2rem 0;
