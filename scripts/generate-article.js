@@ -432,28 +432,30 @@ function insertBeforeClosingArticleGrid(filePath, article, cardHtml) {
     return;
   }
 
-  const articleGridIndex = html.lastIndexOf('<div class="article-grid">');
+  const gridOpen = '<div class="article-grid">';
+  const articleGridIndex = html.lastIndexOf(gridOpen);
 
   if (articleGridIndex === -1) {
     throw new Error(`Could not find article grid in ${filePath}`);
   }
 
-  const closingSectionIndex = html.indexOf("</section>", articleGridIndex);
+  const searchStart = articleGridIndex + gridOpen.length;
+  const nextSectionIndex = html.indexOf('<section class="section', searchStart);
 
-  if (closingSectionIndex === -1) {
-    throw new Error(`Could not find section close after article grid in ${filePath}`);
+  if (nextSectionIndex === -1) {
+    throw new Error(`Could not find next section after article grid in ${filePath}`);
   }
 
-  const beforeSectionClose = html.lastIndexOf("</div>", closingSectionIndex);
+  const gridCloseIndex = html.lastIndexOf("</div>", nextSectionIndex);
 
-  if (beforeSectionClose === -1) {
-    throw new Error(`Could not find insertion point before section close in ${filePath}`);
+  if (gridCloseIndex === -1 || gridCloseIndex < articleGridIndex) {
+    throw new Error(`Could not find article grid closing div in ${filePath}`);
   }
 
   const updated =
-    html.slice(0, beforeSectionClose) +
+    html.slice(0, gridCloseIndex) +
     `${cardHtml}\n` +
-    html.slice(beforeSectionClose);
+    html.slice(gridCloseIndex);
 
   writeFile(filePath, updated);
 }
