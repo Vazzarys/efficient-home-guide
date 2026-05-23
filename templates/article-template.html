@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{title}}</title>
+
+    <meta name="description" content="{{description}}" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Efficient Home Guide" />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://efficienthomeguide.com/posts/{{slug}}.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://efficienthomeguide.com/posts/{{slug}}.html"
+    />
+    <meta property="og:site_name" content="Efficient Home Guide" />
+    <meta
+      property="og:image"
+      content="https://efficienthomeguide.com/assets/images/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Efficient Home Guide energy-saving tips for a smarter, more efficient home"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://efficienthomeguide.com/assets/images/og-image.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8F9R09X6RL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8F9R09X6RL");
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Article Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{title}}",
+        "description": "{{description}}",
+        "author": {
+          "@type": "Organization",
+          "name": "Efficient Home Guide"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Efficient Home Guide"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://efficienthomeguide.com/posts/{{slug}}.html"
+        },
+        "datePublished": "{{datePublished}}",
+        "dateModified": "{{dateModified}}"
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="/" class="site-logo" aria-label="Efficient Home Guide homepage">
+          Efficient Home Guide
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/categories.html">Categories</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">💡</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <article class="section">
+        <div class="container content-narrow">
+          <p class="eyebrow">{{category}}</p>
+
+          <h1>{{title}}</h1>
+
+{{content}}
+
+          <p>
+            Continue reading:
+            <a href="{{relatedUrl}}">
+              {{relatedTitle}}
+            </a>.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <p class="footer-logo">Efficient Home Guide</p>
+          <p>
+            Practical energy-saving tips for a smarter, more efficient home.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/disclaimer.html">Disclaimer</a></li>
+            <li>
+              <a href="/editorial-guidelines.html">Editorial Guidelines</a>
+            </li>
+            <li>
+              <a href="/about-the-content.html">About the Content</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          &copy; <span id="current-year">2026</span> Efficient Home Guide. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Do Smart Appliances Really Save Money?",
+    "slug": "do-smart-appliances-really-save-money",
+    "category": "Smart Home Devices",
+    "categoryPage": "smart-home-devices.html",
+    "description": "Learn whether smart appliances really save money, when they can reduce energy waste, what to check before buying, and which smart features matter most.",
+    "excerpt": "Learn when smart appliances may reduce energy waste, when they are not worth the cost, and what features actually matter before buying.",
+    "image": "smart-appliances-kitchen.webp",
+    "imageAlt": "Modern kitchen with smart appliances and natural daylight",
+    "imageCaption": "Smart appliances can be useful when they reduce waste, improve scheduling, or provide better visibility into energy use.",
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-01-01",
+    "relatedLinks": [
+      {
+        "title": "Best Smart Home Devices for Lowering Energy Use",
+        "url": "/posts/best-smart-home-devices-for-lowering-energy-use.html"
+      },
+      {
+        "title": "Are Smart Plugs Worth It for Saving Energy?",
+        "url": "/posts/are-smart-plugs-worth-it-for-saving-energy.html"
+      }
+    ]
+  }
+]
